@@ -1,7 +1,72 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+const addAll = function(arr){
+  //add together
+let total = 0
 
+//loop
+for(let num of arr){
+  total += num
+}
+//return sum
+return total
+}
+
+
+const countSpaces = function(str){
+  let counter = 0
+  for(let char of str){
+    if(char === " "){
+      counter = counter +1
+    }
+  }
+return counter
+}
+
+const countTrues = function(arr){
+  let trues = 0
+  for(let boolean of arr){
+    if(boolean === true){
+      trues = trues +1
+    }
+  }
+  return trues
+}
+
+const makeFriendly = function(str1) {
+let str = ""
+for(let char of str1){
+  if(char !== "."){
+    str = str + char
+  }else {
+    str = str + "!"
+}  
+}
+return str
+}
+
+const cubeAll = function(arr){
+let cubed = []
+for(let item of arr){
+  cubed.push(item ** 3)
+}
+return cubed
+}
+
+const addNoises = function(arr){
+  const makeFriendly = function(str1) {
+    let str = ""
+    for(let char of str1){
+      if(char !== "."){
+        str = str + char
+      }else {
+        str = str + "!"
+    }  
+    }
+    return str
+    }
+}
 
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
@@ -42,14 +107,6 @@ if (typeof integersOnly === 'undefined') {
 }
 
 const assert = require('assert');
-const {
-  addAll,
-  countSpaces,
-  countTrues,
-  makeFriendly,
-  cubeAll,
-  addNoises,
-} = require('./your-functions'); // Import your functions
 
 describe('addAll', () => {
   it(`adds all the numbers in the array`, () => {
