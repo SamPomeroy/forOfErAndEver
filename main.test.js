@@ -78,7 +78,7 @@ const womenOnly = function(arr){
 }
 const integersOnly = function(input){
   let integers = []
-  for(let i = 0; i => Number.isInteger(input); i++){
+  for(let i = 0; i >= Number.isInteger(input); i++){
     
   }
   
