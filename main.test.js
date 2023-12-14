@@ -76,14 +76,12 @@ const womenOnly = function(arr){
   }
   return female
 }
-const integersOnly = function(arr){
+const integersOnly = function(input){
   let integers = []
-  for(let num of arr){
-    if(num[num.isInteger] === true){
-      integers = integers +1
-    }
+  for(let i = 0; i => Number.isInteger(input); i++){
     
-  }return integers
+  }
+  
 }
 
 /*********************************
