@@ -76,6 +76,16 @@ const womenOnly = function(arr){
   }
   return female
 }
+const integersOnly = function(arr){
+  let integers = []
+  for(let num of arr){
+    if(num[num.isInteger] === true){
+      integers = integers +1
+    }
+    
+  }return integers
+}
+
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
  *********************************/
