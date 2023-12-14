@@ -35,21 +35,21 @@ const countTrues = function(arr){
 }
 
 const makeFriendly = function(str1) {
-let str = ""
-for(let char of str1){
-  if(char !== "."){
-    str = str + char
-  }else {
-    str = str + "!"
-}  
-}
-return str
-}
+  let str = ""
+  for(let char of str1){
+    if(char !== "."){
+      str = str + char
+    }else {
+      str = str + "!"
+  }  
+  }
+  return str
+  }
 
 const cubeAll = function(arr){
 let cubed = []
-for(let item of arr){
-  cubed.push(item ** 3)
+for(let num of arr){
+  cubed.push(num ** 3)
 }
 return cubed
 }
@@ -64,8 +64,10 @@ for(let name of arr){
   }else if((name === "Barnie"||name === "Sharp Tooth")){
     withNoises.push(name + ' says "ROWR."')
   }
-}return withNoises
 }
+return withNoises
+}
+
 const womenOnly = function(arr){
   let female = []
   for(let name of arr){
@@ -86,9 +88,9 @@ const womenOnly = function(arr){
 const integersOnly = function(arr){
   let integers = []
   for(let num of arr){
-    if(num % 1 !== 0){
-    } else{
-      integers.push(num)
+    if(num % 1 === 0){
+  
+     integers.push(num)
     }
   }
   return integers
