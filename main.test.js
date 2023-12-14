@@ -55,19 +55,27 @@ return cubed
 }
 
 const addNoises = function(arr){
-  const makeFriendly = function(str1) {
-    let str = ""
-    for(let char of str1){
-      if(char !== "."){
-        str = str + char
-      }else {
-        str = str + "!"
-    }  
-    }
-    return str
-    }
+let withNoises = []
+for(let name of arr){
+  if(name === "Fido" || name === "Rolph" || name === "Maisie"){
+    withNoises.push(name + ' says "Woof!"')
+  }else if(name === "Garfield"||name === "Heathcliff"){
+    withNoises.push(name + ' says "Meow!"')
+  }else if((name === "Barnie"||name === "Sharp Tooth")){
+    withNoises.push(name + ' says "ROWR."')
+  }
+}return withNoises
 }
+const womenOnly = function(arr){
+  let female = []
+  for(let name of arr){
+    if(name[name.length -1] === "F"){
+      female.push(name)
+    }
 
+  }
+  return female
+}
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
  *********************************/
